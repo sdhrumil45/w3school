@@ -1,0 +1,638 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* header strat */
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: rgba(40,42,53);
+}
+.header a {
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    height: 100%;
+    width:100%;
+    color: #ffc0c7;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+
+/*...... css for navbar....... */
+
+#navbar{
+    position: sticky;
+    /* border-bottom: solid rgba(128, 128, 128, 0.199) 1px; */
+    box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.479);
+}
+.nav{
+    display: flex;
+    align-items: center;
+    background-color:white;
+    height:80px;
+    padding-left:2vw;
+    font-size:0.95rem;
+    font-weight: bold;
+}
+
+.nav-r{
+    width: 80vw;
+    margin-right:11vw;
+    display: flex;
+    align-items: center;
+}
+
+.nav-l{
+    width: 20vw;
+}
+
+.nav div{
+    display: flex;
+}
+
+.nav div a{
+    text-decoration: none;
+    color: black;
+}
+
+#line-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    margin-left:20px;
+}
+
+.cat {
+    height: 45px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    border: solid gray 1px;
+    border-radius: 5px 0 0 5px;
+}
+
+.cat select{
+    border: none;
+    outline: none;
+}
+
+
+#line-3 input{
+    height: 45px;
+    width:45vw;
+    display: flex;
+    align-items: center;
+    outline: none;
+    border: none;
+    text-indent: 25px;
+    font-size: 15px;
+    border: solid gray 1px;
+
+}
+
+.search{
+    height:45px;
+    width: 50px;
+    background-color: #04aa6d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 5px 5px 0;
+    font-size: 20px;
+}
+
+.account{
+    margin: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.account span a i{
+    font-size: 25px;
+    padding: 5px;
+}
+
+.start{
+    display: flex;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart{
+    height: 45px;
+    padding-left: 20px;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    .nav-r{
+        width: 70vw;
+        margin-right: 5vw;
+    }
+    
+  } 
+
+@media only screen and (max-width: 1000px) {
+    .nav-r{
+        width: 60vw;
+        margin-right: 10vw;
+    }
+    #line-3 input{
+        width:40vw;
+    }
+    .nav-l{
+        width: 25vw;
+    }
+  } 
+
+  @media only screen and (max-width:875px) {
+    .nav-r{
+        width: 50vw;
+        margin-right:15vw;
+    }
+    #line-3 input{
+        width:30vw;
+    }
+    .nav-l{
+        width: 25vw;
+    }
+  } 
+
+@media only screen and (max-width:800px) {
+    .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color:white;
+        height:140px;
+    }
+    .nav-r{
+        width:80vw;
+        margin-right:15vw;
+    }
+    #line-3 input{
+        width:50vw;
+    }
+    .nav-l{
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+} 
+
+@media only screen and (max-width:600px) {
+
+    .cat{
+        display: none;
+        border: none;
+    }
+
+    .cat select{
+        display: none;
+    }
+
+    #line-3 input{
+        width:45vw;
+        font-size: 10px;
+        text-indent: 5px;
+    }
+} 
+
+
+
+
+
+/*....course list start....*/
+
+.container{
+    background-color: white;
+    padding:15px;
+}
+
+.cl-1{
+    margin-top: 30px;
+    line-height: 30px;
+}
+
+.cl-1 a{
+    text-decoration: none;
+    color: black;
+}
+.cl-2{
+    line-height: 50px;
+    margin-top: 30px;
+}
+
+.subcontainer{
+    display: grid;
+    grid-template-columns:18vw auto;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.filter{
+    display: flex;
+    flex-direction:column;
+    font-size: 17px;
+    padding: 15px;
+}
+
+.filter div{
+    line-height: 50px;
+}
+
+
+.filter input[type=number]{
+    height: 50px;
+    border: solid black 1px;
+    outline: none;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 12vw;
+    margin: 3px;
+}
+
+.filter input[type=checkbox]{
+   margin-top: -50px;
+}
+
+.short{
+    padding: 10px;
+}
+
+.firstline{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 77vw;
+}
+
+.left{
+    display: flex;
+    width:50%;
+}
+
+.left div{
+    margin: 5px;
+}
+
+.right{
+    display: flex;
+    width:50%;
+    justify-content: right;
+}
+
+.right div{
+    margin: 5px;
+}
+
+.secondline{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    column-gap: 10px;
+    row-gap: 25px;
+    margin-top: 25px;
+}
+.coursebox{
+    height: 300px;
+    width:225px;
+    padding: 12.5px;
+    box-shadow: 0px 0px 2px rgba(128, 128, 128, 0.479);
+}
+
+.coursebox img{
+    height: 150px;
+    width: 200px;
+}
+
+.coursebox span{
+    background-color:rgba(40,42,53);
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+    position: absolute;
+    margin-left:-200px;
+    margin-top: 115px;
+
+}
+
+.btn-0{
+    width: 200px;
+    margin-top: 10px;
+}
+
+.btn-1{
+    display:inline-block;
+    height: 35px;
+    width: 95px;
+    background-color: white;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+    border-radius: 5px;
+    border: solid black 1px;
+    text-align: center;
+}
+
+.btn-2{
+    display:inline-block;
+    height: 35px;
+    width: 95px;
+    background-color:#038b59;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 13px;
+    color:white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media only screen and (max-width:1200px) {
+
+    .secondline{
+        grid-template-columns: auto auto auto;
+    }
+
+    .coursebox{
+        height: 350px;
+        width:250px;
+    }
+    
+    .coursebox img{
+        height:200px;
+        width: 225px;
+    }
+    
+    .coursebox span{
+        margin-left:-225px;
+        margin-top: 150px;
+    }
+} 
+
+@media only screen and (max-width:1020px) {
+
+    .subcontainer{
+        grid-template-columns:25vw auto;
+    }
+
+    .firstline{
+        width: 65vw;
+    }
+    .secondline{
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+    }
+
+    .coursebox{
+        height: 350px;
+        width:275px;
+    }
+    
+    .coursebox img{
+        height:200px;
+        width: 250px;
+    }
+    
+    .coursebox span{
+        margin-left:-250px;
+    }
+} 
+
+@media only screen and (max-width:830px) {
+
+    .subcontainer{
+        display: flex;
+        flex-direction:column;
+    }
+
+    .firstline{
+        width: 90vw;
+    }
+
+    .coursebox{
+        height: 350px;
+        width:300px;
+    }
+    
+    .coursebox img{
+        height:200px;
+        width: 275px;
+    }
+    
+    .coursebox span{
+        margin-left:-275px;
+    }
+} 
+
+@media only screen and (max-width:680px) {
+
+    .coursebox{
+        width:250px;
+    }
+    
+    .coursebox img{
+        width: 225px;
+    }
+    
+    .coursebox span{
+        margin-left:-225px;
+    }
+} 
+
+@media only screen and (max-width:535px) {
+
+    .secondline{
+        grid-template-columns: auto;
+    }
+    .coursebox{
+        width:300px;
+    }
+    
+    .coursebox img{
+        width: 275px;
+    }
+    
+    .coursebox span{
+        margin-left:-275px;
+    }
+} 
+
+
+/* <!--FOOTER--> */
+
+.footer{
+    background-color:rgba(40,42,53);
+    padding: 50px;
+}
+
+.footer h1{
+    color: white;
+    line-height: 50px;
+}
+
+.footer h2{
+    color: #ffc0c7;
+    line-height: 50px;
+}
+
+.footer input[type=email]{
+    height: 40px;
+    width: 300px;
+    margin: 10px 0;
+    font-size: 15px;
+    text-indent: 10px;
+    outline: none;
+}
+
+.footer input[type=email]:focus{
+    outline: solid 2px skyblue;
+}
+
+.footer input[type=checkbox]{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+#checkbox{
+    color: white;
+    font-size: 15px;
+    line-height: 50px;
+}
+
+#checkbox a{
+    color:rgb(88, 131, 195);
+}
+
+
+
+.sub a{
+    text-decoration: none;
+    text-align: center;
+    background-color: #ffc0c7;
+    display: inline-block;
+    height: 45px;
+    width: 150px;
+    border-radius: 30px;
+    color:black;
+    padding-top: 15px;
+}
+
+.second{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.second span{
+    height:30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+}
+
+.second span:hover{
+    background-color:white;
+    color: black;
+}
+
+.privacy span{
+    font-size: 15px;
+    color: white;
+}
+.privacy a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    line-height: 80px;
+    padding: 5px;
+}
+
+
+
+@media only screen and (max-width:725px) {
+    .footer h1{
+       font-size: 1.5rem;
+    }
+    .footer h2{
+        font-size: 1rem;
+    }
+    
+    .footer input[type=checkbox]{
+        height: 15px;
+        width: 15px;
+        margin-right:5px;
+    }
+    
+    #checkbox{
+        font-size: 13px;
+        line-height: 50px;
+    }
+    .copy{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .footer h1{
+        font-size: 1.2rem;
+        line-height: 30px;
+     }
+    .footer h2{
+        font-size: 0.8rem;
+        line-height: 25px;
+    }
+    .footer input[type=email]{
+        height: 35px;
+        width: 250px;
+        margin: 7px 0;
+        font-size: 12px;
+        text-indent: 7px;
+    }
+    
+    #checkbox{
+        line-height: 25px;
+    }
+    .sub a{
+        height: 40px;
+        width: 130px;
+        padding-top: 12px;
+    }
+    .privacy span{
+        font-size: 12px;
+        color: white;
+    }
+    .privacy a{
+        font-size: 10px;
+        line-height: 25px;
+        padding: 5px;
+    }
+    .copy{
+        font-size: 12px;
+    }
+}
+
+
+
+
+

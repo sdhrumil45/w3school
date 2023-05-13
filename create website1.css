@@ -1,0 +1,922 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*...... css for navbar....... */
+
+
+.nav{
+    display: flex;
+    align-items: center;
+    background-color:white;
+    height:80px;
+    padding-left:2vw;
+    font-size:0.95rem;
+    font-weight: bold;
+}
+
+.nav-r{
+    width: 35vw;
+    margin-right:11vw;
+}
+
+.nav-l{
+    width: 50vw;
+}
+
+.nav div{
+    display: flex;
+}
+
+.nav div a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn{
+    width:12vw;
+    height:80px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.btn:hover{
+    background-color: #04aa6d;
+    color: white;
+    cursor: pointer;
+}
+.upgrade{
+    background-color:#9763f6;
+    width:13vw;
+    height: 45px;
+    border: none;
+    border-radius:30px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 12px;
+    color: white;
+}
+
+.upgrade:hover{
+    background-color:#8346f4;
+}
+
+.create{
+    background-color:#fff4a3;
+    width:17vw;
+    height: 45px;
+    border: none;
+    border-radius:30px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 12px;
+    color:black;
+}
+
+.create:hover{
+    background-color:#f8e97b;
+
+}
+
+.certi{
+    background-color:#ffc0c7;
+    width:16vw;
+    height: 45px;
+    border: none;
+    border-radius:30px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 12px;
+    color:black;
+
+}
+
+.certi:hover{
+    background-color:#fd98a4;
+
+}
+
+
+.account{
+    margin: 10px;
+    height: 50px;
+    width:20vw;
+    display: flex;
+    align-items: center;
+}
+
+
+.signup{
+    background-color:#04aa6d;
+    display: flex;
+    width:8vw;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin-right: -40px;
+}
+
+.signup:hover{
+    background-color:#038b59;
+
+}
+
+
+.login{
+    background-color:#d9eee1;
+    display: flex;
+    width:10vw;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    padding-left: 20px;
+}
+
+
+
+@media only screen and (max-width: 1256px) {
+    .nav-r{
+        margin-right:10vw;
+    }
+  } 
+
+  @media only screen and (max-width: 1200px) {
+    .nav-r{
+        margin-right:9vw;
+    }
+    .nav-l{
+        width: 52vw;
+    }
+  } 
+
+
+  @media only screen and (max-width: 1150px) {
+    
+    .nav-r{
+        width:40vw;
+    }
+
+    .nav-l{
+        width:48vw;
+    }
+    .upgrade{
+        display: none;
+    }
+
+    .login{
+        width:11vw;
+        padding-left: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 1025px) {
+    .create{
+       display: none;
+    }
+    .nav-l{
+        width:37vw;
+    }
+    .nav-r{
+        width: 45vw;
+        margin-right:15vw;
+    }
+  } 
+
+ 
+@media only screen and (max-width: 955px) {
+
+    .nav-l{
+        width:40vw;
+    }
+
+    .certi{
+        width:18vw;  
+    }
+    .signup{
+        width: 10vw;
+    }
+
+    .login{
+        width:12vw;
+    }
+
+    .nav-r{
+        width: 47vw;
+        margin-right:8vw;
+    }
+
+    .btn{
+        width: 13vw;
+    }
+  } 
+
+
+  @media only screen and (max-width: 875px) {
+    .certi{
+       display: none;
+    }
+    .nav-r{
+        width: 48vw;
+        margin-right:18vw;
+    }
+    .btn{
+        width: 14vw;
+    }
+    .nav-l{
+        width:28vw;
+    }
+    .signup{
+        width: 12vw;
+    }
+    .login{
+        width:14vw;
+    }
+  } 
+ 
+  @media only screen and (max-width: 800px) {
+  
+    .nav-r{
+        width:55vw;
+        margin-right:10vw;
+    }
+    .btn{
+        width: 17vw;
+    }
+    .nav-l{
+        width:25vw;
+    }
+  } 
+
+
+  @media only screen and (max-width:730px) {
+    .nav-r{
+        width:56vw;
+        margin-right:5vw;
+    }
+    .signup{
+        width: 14vw;
+    }
+
+    .login{
+        width:16vw;
+    }
+  }
+
+
+  @media only screen and (max-width:670px) {
+    .nav{
+        font-size:0.8rem;
+        height: 70px;
+    }
+    .nav-l{
+        display: none;
+        width: 0px;
+    }
+    .account{
+        display: none;
+        width: 0px;
+    }
+    .signup{
+        display: none;
+    }
+    .login{
+        display: none;
+    }
+    .btn{
+        height: 70px;
+        width:18vw ;
+    }
+    .nav-r{
+        width:80vw;
+    }
+    .nav-r img{
+        height: 40px;
+        width: 40px;
+    }
+  }
+
+  @media only screen and (max-width:530px) {
+
+    .btn{
+        height: 70px;
+        width:20vw ;
+    }
+    .nav-r img{
+        height: 30px;
+        width: 30px;
+    }
+  }
+
+  @media only screen and (max-width:475px) {
+
+    .btn{
+        width:30vw ;
+    }
+    .nav-r{
+        width:40vw;
+        margin-right:5vw;
+    }
+
+  }
+
+/*...... css for hero section.......------------------ ----------*/
+
+.hero{
+    background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX31172220.jpg");
+    background-color:rgb(32, 31, 31);
+    background-blend-mode:multiply;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.hero-icon{
+    display: flex;
+    flex-direction: row-reverse;
+    color: white;
+}
+
+.hero-icon span{
+    margin: 15px;
+    font-size: 20px;
+}
+
+.hero-content{
+    width: 100%;
+    text-align: center;
+}
+
+#line-1{
+    font-size: 60px;
+    font-weight: 800;
+    margin-top: 50px;
+}
+
+#line-2{
+    font-size: 20px;
+    font-weight: bolder;
+    color:#ffc0c7;
+    margin-top: 20px;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.g-btn{
+    height: 50px;
+    width: 250px;
+    background-color:#04aa6d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    margin-top: 25px;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+#line-4 {
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+#line-4 a{
+    color: white;
+}
+
+#line-4 a:hover{
+    color: #04aa6d;
+}
+
+#line-5{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.l5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.l5 i{
+    font-size: 50px;
+    margin-right: 10px;
+    color: #d9eee1;
+}
+
+.l5 h5{
+    font-size: 20px;
+    line-height: 25px;
+    color: #d9eee1;
+}
+
+.l5 h6{
+    font-size: 15px;
+    line-height: 20px;
+}
+
+
+@media only screen and (max-width:1000px) {
+
+    #line-5{
+        grid-template-columns: auto auto;
+    }
+}
+
+
+@media only screen and (max-width:750px) {
+
+    #line-1{
+        font-size: 40px;
+        font-weight: 800;
+        margin-top: 30px;
+    }
+    
+    #line-2{
+        font-size: 15px;
+        font-weight: bolder;
+        margin-top: 15px;
+    }
+
+    #line-4 {
+        margin-top: 20px;
+        font-size: 15px;
+    }
+  }
+
+  @media only screen and (max-width:550px) {
+
+    .g-btn{
+        height: 40px;
+        width: 200px;
+        padding: 15px;
+        font-size: 12px;
+    }
+   
+    #line-1{
+        font-size: 30px;
+        font-weight: 800;
+        margin-top: 30px;
+    }
+    
+    #line-2{
+        font-size: 10px;
+        font-weight: bolder;
+        margin-top: 15px;
+    }
+    #line-4 {
+        margin-top: 20px;
+        font-size: 13px;
+    }
+
+    .l5{
+        padding: 25px;
+    }
+    
+    .l5 i{
+        font-size: 40px;
+        margin-right: 7px;
+    }
+    
+    .l5 h5{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    
+    .l5 h6{
+        font-size: 12px;
+        line-height: 16px;
+    }
+  }
+
+
+/* <!--code editor & my learning--> */
+
+.codeeditor{
+    width: 98vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0px;
+}
+
+.ce-1{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.ce-2 , .ce-4{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.ce-3{
+    width:75vw;
+}
+
+.ce-33{
+    width:45vw;
+}
+
+
+@media only screen and (max-width:950px) {
+    .ce-3{
+        width:70vw;
+        padding-bottom: 100px;
+    }
+
+    .ce-4{
+        margin-top: -100px;
+    }
+}
+
+@media only screen and (max-width:700px) {
+
+    .ce-1{
+        font-size: 2.5rem;
+    }
+
+    .ce-2 {
+        font-size: 1rem;
+    }
+    .ce-3{
+        width:65vw;
+        padding-bottom: 120px;
+    }
+
+    .ce-4{
+        margin-top: -120px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+
+    .ce-1{
+        font-size: 2rem;
+    }
+
+    .ce-2 {
+        font-size: 0.8rem;
+    }
+    .ce-3{
+        width:70vw;
+        padding-bottom: 150px;
+    }
+
+    .ce-4{
+        margin-top: -150px;
+    }
+
+    .ce-33{
+        width:50vw;
+    }
+}
+
+@media only screen and (max-width:475px) {
+
+    .ce-1{
+        font-size: 1.8rem;
+    }
+
+    .ce-2 {
+        font-size: 0.8rem;
+    }
+    .ce-3{
+        width:70vw;
+        padding-bottom: 190px;
+    }
+
+    .ce-4{
+        margin-top: -200px;
+    }
+
+    .ce-33{
+        width:55vw;
+    }
+}
+
+
+/* toggle switch */
+	/* toggle in label designing */
+
+    #switch{
+        display: flex;
+        justify-content: center;
+    }
+
+    #switch .checkbox{
+        display: none;
+    }
+	.toggle {
+		position : relative ;
+		display : inline-block;
+		width : 50px;
+		height : 25px;
+		background-color:#04aa6d;
+		border-radius: 30px;
+		
+	}
+		
+/* After slide changes */
+	.toggle:after {
+		content: '';
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background-color:white;
+		top: 2px;
+		left: 2px;
+		transition: all 0.5s;
+	}
+		
+	/* Checkbox checked effect */
+	.checkbox:checked + .toggle::after {
+		left : 27px;
+	}
+		
+	/* Checkbox checked toggle label bg color */
+	.checkbox:checked + .toggle {
+		background-color: #04aa6d;
+	}
+
+
+.ce-3{
+    height:400px;
+}
+
+
+ /* subscription plan */
+
+ .plan{
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+    column-gap: 25px;
+    padding: 30px;
+    justify-content: center;
+    margin-bottom: 25px;
+ }
+
+ .plan-1{
+    height: 500px;
+    width: 20vw;
+    border-radius: 30px;
+    border: solid #04aa6d 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 15px;
+ }
+
+ .plan-1 ul{
+    list-style: none;
+    text-align: start;
+    margin-top: 20px;
+    line-height: 30px;
+ }
+
+ @media only screen and (max-width:1160px) {
+    .plan{
+        grid-template-columns:auto auto;
+        row-gap: 25px;
+     }
+
+    .plan-1{
+        width: 27vw;
+        padding: 10px;
+     }
+}
+
+
+@media only screen and (max-width:850px) {
+    .plan-1{
+        width: 35vw;
+        padding: 20px;
+     }
+}
+
+@media only screen and (max-width:650px) {
+   
+    #switch{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan{
+        grid-template-columns:auto;
+     }
+
+    .plan-1{
+        width: 60vw;
+        padding: 10px;
+     }
+    
+}
+
+
+/* <!--FOOTER--> */
+
+.footer{
+    height: 500px;
+    background-color:rgba(40,42,53);
+    padding-top: 50px;
+}
+
+.footerbar{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second{
+    height: 80px;
+    padding-right:8vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    color: white;
+}
+
+.second span{
+    height:50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    font-size: 25px;
+}
+
+.second span:hover{
+    background-color:white;
+    color: black;
+}
+.fb1{
+    display: flex;
+}
+
+.fb2{
+    display: flex;
+    align-items:center;
+}
+.footer button{
+    border: none;
+    margin: 5px;
+}
+
+.cw-btn{
+    text-decoration: none;
+    color:rgba(40,42,53);
+    font-size: 15px;
+    background-color:white;
+    height: 30px;
+    padding: 10px;
+    border-radius:5px;
+}
+
+.fb3{
+    display: flex;
+    width:25vw;
+    height: 30px;
+    justify-content: flex-end;
+    align-items:center;
+
+}
+
+.fb3 button{
+    background-color:rgba(40,42,53);
+}
+
+.fb3-btn{
+    text-decoration: none;
+    color:white;
+    font-size: 15px;
+    height: 30px;
+    padding: 3px;
+    border-radius:2px;
+    letter-spacing: 3px;
+}
+
+.fb3-btn:hover{
+    color: #038b59;
+}
+
+.ftext{
+    margin-top: 10px;
+    color: white;
+    margin-left: 5vw;
+    width: 90vw;
+    text-align: center;
+}
+
+.ftext a{
+    color: white;
+}
+
+.ftext a:hover{
+    color: #038b59;
+}
+
+@media only screen and (max-width:1200px) {
+    .fb2 button:last-of-type {
+        display: none;
+      }
+}
+
+@media only screen and (max-width:1000px) {
+    .footer{
+        height: 700px;
+    }
+    .footerbar{
+        height: 300px;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fb1{
+        height: 50px;
+    }
+    .fb2 button:last-of-type {
+        display:block;
+      }
+    .fb2{
+        height:225px;
+        width: 100%;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fb2 button{
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        border-radius:1rem;
+    }
+
+    .fb2 .cw-btn{
+        display: inline-block;
+        height: 40px;
+        text-align: center;
+        width:340px;
+        padding: 10px;
+    }
+
+    .fb3{
+        justify-content: center;
+    }
+
+    .second{
+        justify-content: center;
+        padding-right: 0px;
+    }
+}
+
+@media only screen and (max-width:450px) {
+   
+    .footer button{
+        margin: 3px;
+        border-radius: 3px;
+    }
+    .cw-btn{
+        font-size: 12px;
+        height: 30px;
+        padding: 7px;
+    }
+    .fb2 .cw-btn{
+        width:270px;
+        padding: 10px;
+    }
+    .fb3-btn{
+        font-size: 12px;
+    }
+}
+
+
